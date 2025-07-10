@@ -1,0 +1,7 @@
+import pandas as pd 
+import matplotlib.pyplot as plt
+
+df= pd.read_csv('dados_saude_estilo_vida.csv', sep= ';') # fonte da base de dados
+
+plt.scatter(df['Atividade Física (min/dia)'], df['Nível de Estresse'])# gráfico de dispersão, usar sempre duas variáveis quantitativas
+plt.show
